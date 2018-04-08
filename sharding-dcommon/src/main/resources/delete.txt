@@ -1,0 +1,25 @@
+use order0;
+delete from order0;
+delete from order1;
+
+use order1;
+delete from order0;
+delete from order1;
+
+
+
+
+
+use order0;
+delete from order0;
+delete from order1;
+delete from order2;
+delete from order3;
+
+use order1;
+delete from order0;
+delete from order1;
+delete from order2;
+delete from order3;
+
+

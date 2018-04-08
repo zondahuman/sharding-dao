@@ -1,0 +1,25 @@
+use order0;
+truncate table order0;
+truncate table order1;
+
+use order1;
+truncate table order0;
+truncate table order1;
+
+
+
+
+use order0;
+truncate table order0;
+truncate table order1;
+truncate table order2;
+truncate table order3;
+
+use order1;
+truncate table order0;
+truncate table order1;
+truncate table order2;
+truncate table order3;
+
+
+

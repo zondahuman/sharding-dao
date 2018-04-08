@@ -1,0 +1,68 @@
+DROP DATABASE IF EXISTS business0;
+CREATE DATABASE IF NOT EXISTS business0;
+use business0;
+create table business0 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table business1 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table business2 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table business3 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+
+
+DROP DATABASE IF EXISTS business1;
+CREATE DATABASE IF NOT EXISTS business1;
+use business1;
+create table business0 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table business1 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table business2 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table business3 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  business_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+
+
+
+

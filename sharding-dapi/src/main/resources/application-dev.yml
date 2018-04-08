@@ -1,0 +1,109 @@
+server:
+      port: 8099  #配置端口
+      address : 172.16.2.133
+      session-timeout: 30
+      tomcat.max-threads: 0
+      tomcat.uri-encoding: UTF-8
+
+spring:
+      datasource:
+                  names: order0-master,order0-slave,order1-master,order1-slave,business0-master,business0-slave,business1-master,business1-slave
+                  order0-master:
+                                  url: jdbc:mysql://172.16.2.133:3306/order0?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  order0-slave:
+                                  url: jdbc:mysql://172.16.2.133:3306/order0?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  order1-master:
+                                  url: jdbc:mysql://172.16.2.133:3306/order1?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  order1-slave:
+                                  url: jdbc:mysql://172.16.2.133:3306/order1?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  business0-master:
+                                  url: jdbc:mysql://172.16.2.133:3306/business0?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  business0-slave:
+                                  url: jdbc:mysql://172.16.2.133:3306/business0?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  business1-master:
+                                  url: jdbc:mysql://172.16.2.133:3306/business1?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+                  business1-slave:
+                                  url: jdbc:mysql://172.16.2.133:3306/business1?characterEncoding=UTF-8
+                                  username: root
+                                  password: root
+                                  driverClassName: com.mysql.jdbc.Driver
+
+      devtools:
+              restart:
+                      enabled: true #热部署生效
+                      additional-paths: sharding-dbtable/src/main/java  #设置重启的目录
+#                      exclude: WEB-INF/**   #classpath目录下的WEB-INF文件夹内容修改不重启
+sharding:
+          database:
+                    available: 2
+          table:
+                    available: 2
+          datasource:
+                      default:
+                                url: jdbc:mysql://172.16.2.134:33066/order0?characterEncoding=UTF-8
+                                username: root
+                                password: root
+                                driverClassName: com.mysql.jdbc.Driver
+
+mybatis:
+        configLocations: mybatis/mybatis-config.xml
+        mapperLocations: classpath*:mybatis/mapper/*.xml
+        typeAliasesPackage: com.abin.lee.sharding.dbtable.api.model
+
+
+# LOGGING
+logging:
+        level:
+              root: INFO
+              org:
+                  springframework: DEBUG
+                  hibernate: DEBUG
+#        path: F:\\
+#        file: log.log
+              com:
+                  ibatis: DEBUG
+                  abin:
+                        lee:
+                            sharding:
+                                      dbtable:
+                                              api:
+                                                  mapper: DEBUG
+
+
+
+
+debug: true
+
+
+
+
+
+
+
+
+
+
+
+
+

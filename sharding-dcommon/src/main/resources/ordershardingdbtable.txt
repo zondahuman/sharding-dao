@@ -1,0 +1,81 @@
+DROP DATABASE IF EXISTS order0;
+CREATE DATABASE IF NOT EXISTS order0;
+use order0;
+create table order0 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table order1 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table order2 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table order3 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+
+DROP DATABASE IF EXISTS order1;
+CREATE DATABASE IF NOT EXISTS order1;
+use order1;
+create table order0 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table order1 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table order2 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+create table order3 (
+  id bigint(20) PRIMARY KEY NOT NULL COMMENT '主键id',
+  user_id bigint(20) COMMENT 'user_id',
+  business_id bigint(20) COMMENT '商品id',
+  order_name varchar(64)  COMMENT '订单名',
+  create_time datetime COMMENT '创建时间',
+  update_time datetime COMMENT '更新时间',
+  version int COMMENT '版本号'
+);
+
+
