@@ -9,6 +9,9 @@ import java.lang.annotation.Target;
  * sharding-dao
  * com.abin.lee.sharding.dbtable.api.split
  * 首先你要知道在哪些sql上面要处理分表？你可能需要一个注解：
+ * git@github.com:dushangkui/common-util.git
+ * https://github.com/zondahuman/common-util
+ * https://github.com/dushangkui/common-util
  */
 
 
