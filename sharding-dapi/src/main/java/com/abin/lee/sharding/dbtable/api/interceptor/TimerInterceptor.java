@@ -24,11 +24,20 @@ import java.util.Properties;
  * ParameterHandler
  * StatementHandler
  * ResultSetHandler
+ * https://blog.csdn.net/varyall/article/details/80903790
  */
 @Intercepts(value = {
         @Signature(type = Executor.class,
                 method = "update",
                 args = {MappedStatement.class, Object.class}),
+        @Signature(type = Executor.class,
+                method = "insert",
+                args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class,
+                        CacheKey.class, BoundSql.class}),
+        @Signature(type = Executor.class,
+                method = "delete",
+                args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class,
+                        CacheKey.class, BoundSql.class}),
         @Signature(type = Executor.class,
                 method = "query",
                 args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class,
